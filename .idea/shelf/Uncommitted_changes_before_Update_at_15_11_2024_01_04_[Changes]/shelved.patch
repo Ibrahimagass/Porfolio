@@ -1,0 +1,184 @@
+Index: style.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>* {\r\n    margin: 0.1px;\r\n    padding: 0.1px;\r\n    box-sizing: border-box;\r\n  }\r\nbody {\r\n    font-family: \"Manrope\", sans-serif;\r\n  font-weight: bold;\r\n  font-style: normal;\r\n  font-size: 1em;\r\n  margin: 0;\r\n  padding: 0;\r\n  padding-top: 60px;\r\n  background-color: #1f2039;\r\n  color: white;\r\n}\r\n\r\n@import url('https://fonts.googleapis.com/css?family=Roboto:700');\r\n\r\np <.descrition{\r\n  text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);\r\n}\r\n\r\n.container {\r\n    color: #e5e5e5;\r\n    font-size: 2.26em;\r\n    text-transform: uppercase;\r\n    height: 50vh;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n    padding-top: 30px;\r\n    max-width: 100%;\r\n    object-fit: cover;\r\n    flex-direction: row;\r\n}\r\n\r\n.animation {\r\n  height:50px;\r\n  overflow:hidden;\r\n  margin-left: 1rem;\r\n}\r\n\r\n.animation > div > div {\r\n    padding:0.25rem 0.75rem ;\r\n    height:2.81rem;\r\n    margin-bottom: 2.81rem;\r\n    display:inline-block;\r\n}\r\n\r\n.animation div:first-child {\r\n  animation: text-animation 8s infinite;\r\n}\r\n\r\n.first div {\r\n  background: linear-gradient(0deg, rgba(250,186,96,1) 0%, rgba(150,56,155,1) 60%, rgba(60,108,223,1) 100%);\r\n}\r\n.second div {\r\n    background:radial-gradient(circle, rgba(177,39,15,1) 0%, rgba(233,161,148,1) 100%);\r\n}\r\n\r\n.third div {\r\n    background: radial-gradient(circle, rgba(68,52,59,1) 0%, rgba(233,161,148,1) 100%);\r\n}\r\n\r\n@keyframes text-animation {\r\n  0% {margin-top: 0 ;}\r\n  10% {margin-top: 0 ;}\r\n  20% {margin-top: -5.62rem;}\r\n  30% {margin-top: -5.62rem;}\r\n  40% {margin-top: -11.24rem;}\r\n  60% {margin-top: -11.24rem;}\r\n  70% {margin-top: -5.62rem;}\r\n  80% {margin-top: -5.62rem;}\r\n  90% {margin-top: 0;}\r\n  100% {margin-top: 0;}\r\n}\r\n\r\n\r\n\r\nheader, footer {\r\n    text-align: start;\r\n    font-family: \"Staatliches\", sans-serif;\r\n    font-weight: 100;\r\n    font-style: normal;\r\n    background-color: white;\r\n    padding: 10px 5px;\r\n}\r\n\r\nheader h1 {\r\n    margin: 1em;\r\n    color: rgb(2,0,36) }\r\n\r\n\r\n.containe {\r\n    width: 80%;\r\n    margin: 1px auto;\r\n    padding: 1em 0;\r\n    padding-top: 1px;\r\n}\r\n\r\n.section {\r\n    margin-bottom: 1em;\r\n    padding: 1em;\r\n}\r\n\r\n.section h2 {\r\n    border-bottom: 2px solid  #ccc;\r\n    padding-bottom: 1em;\r\n    font-family:  'Times New Roman', sans-serif;\r\n    font-weight: 900 bold;\r\n    font-stretch: ultra-expanded ;\r\n}\r\n\r\n.project {\r\n    margin-bottom:1em\r\n}\r\n\r\n.project img {\r\n    max-width: 50%;\r\n    height: auto;\r\n    size: 1px;\r\n}\r\n\r\n.project-container{\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n\r\n}\r\n\r\n.contact-form input, .contact-form textarea {\r\n    width: 100%;\r\n    padding: 10px ;\r\n    border-radius: 10px;\r\n    padding-bottom: 5px;\r\n    border: 5px solid;\r\n}\r\n\r\n.contact-form button {\r\n    padding: 1em;\r\n    margin: 0 auto;\r\n    display: block;\r\n    border-radius: 90px;\r\n    cursor: pointer;\r\n    align-items: center;\r\n    background: linear-gradient(#696484, #8788ba);\r\n    margin-top: 1em;\r\n}\r\na {\r\n    color: black;\r\n    text-decoration: none;\r\n}\r\n\r\na:hover {\r\n    text-decoration: underline;\r\n    background: linear-gradient(#696484, #8788ba);\r\n    opacity: 20%;\r\n}\r\n\r\nnav {\r\n    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);\r\n    padding: 1em 3em;\r\n    position: fixed;\r\n    width: 100%;\r\n    top: 0;\r\n    left: 0;\r\n    z-index: 1000;\r\n}\r\n@media (max-width: 768px) {\r\n    nav ul {\r\n      flex-direction:row;\r\n      align-items: center;\r\n      justify-content: space-between;\r\n    }\r\n}\r\n\r\nnav ul {\r\n    list-style: none;\r\n    padding: 10px 10px;\r\n    margin: 10px;\r\n    display: flex;\r\n    justify-content: flex-end;\r\n}\r\n\r\nnav ul li {\r\n    margin-right: 1em;\r\n}\r\n\r\nnav ul li a {\r\n    color: white;\r\n    text-decoration: none;\r\n}\r\nfooter{\r\n    padding: 1em 3em;\r\n    margin: 0;\r\n    height: 30%;\r\n    text-align: center;\r\n\r\n}\r\nem{\r\n    color: black;\r\n    font-size: 1em;\r\n    font-weight: 2em bold ;\r\n\r\n}\r\n\r\nspan{\r\n    color: black;\r\n    font-family: \"Manrope\", sans-serif ;\r\n\r\n}\r\n@media (max-width: 480px) {\r\n    .container {\r\n      font-size: 1.2rem;\r\n    }\r\n    }\r\n\r\n.download-cv-button {\r\n    display: inline-block;\r\n    padding: 10px 20px;\r\n    margin: 10px 0;\r\n    font-size: 16px;\r\n    font-weight: bold;\r\n    color: #fff;\r\n    /* background-color: #4CAF50; /* Couleur du bouton */\r\n    text-align: end;\r\n    text-decoration: underline;\r\n    border-radius: 5px;\r\n    transition: background-color 0.3s ease;\r\n    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(32,121,9,1) 53%, rgba(0,212,255,1) 100%);\r\n    box-shadow: inset 0px 5px 10px 2px \r\n}\r\n\r\n.download-cv-button:hover {\r\n    background-color: #45a049; /* Couleur du bouton au survol */\r\n}\r\n.button-container {\r\n    display: flex;\r\n    justify-content: flex-end; /* Aligne les éléments enfants à droite */\r\n    margin: 10px 0; /* Marges pour espacer le conteneur */\r\n}\r\n.profile-photo {\r\n    max-width: 200px;\r\n    border-radius: 900px 900px;\r\n    border-bottom-left-radius: 10%;\r\n    margin: 1em 0;\r\n    margin-right: 1em;\r\n}\r\n\r\n.profile-photo:hover{\r\n    opacity: 50%;\r\n    background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(32,121,9,1) 53%, rgba(0,212,255,1) 100%) ;\r\n}\r\n  \r\n\r\n  .profile-container {\r\n    display: flex;\r\n    align-items: center;\r\n    box-shadow: inset 2px 2px 5px 1px gray;\r\n    flex-wrap: wrap;\r\n  }\r\n.presentation {\r\n    font-size: 2em;\r\n    align-content: center;\r\n    display: flex;\r\n    padding:0;\r\n    margin: 0 auto;\r\n    font-family: \"Alumni Sans\", sans-serif;\r\n    font-weight: bold;\r\n    background-color: rgb(28, 117, 195);\r\n    text-decoration: underline;\r\n}\r\n.descrition{\r\n    padding: 1em;\r\n    margin: 0 auto;\r\n}\r\n\r\n/*.project img {\r\n    height: 50em;\r\n    size: 38em;\r\n    justify-content: center;\r\n    display: flexbox;\r\n    justify-items: end;\r\n    padding: 5Opx;\r\n\r\n}*/\r\n.download-project-button {\r\n    display: inline-block;\r\n    padding: 10px 20px ;\r\n    margin: 10px 0;\r\n    font-size: 16px;\r\n    font-weight: bold;\r\n    color: #fff;\r\n    /* background-color: #4CAF50; /* Couleur du bouton */\r\n    text-align: end;\r\n    text-decoration: underline;\r\n    border-radius: 5px;\r\n    transition: background-color 0.3s ease;\r\n    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(32,121,9,1) 53%, rgba(0,212,255,1) 100%);\r\n    flex-wrap: wrap;\r\n    box-shadow: inset 0px 5px 10px 2px \r\n\r\n}\r\n\r\n.download-project-button:hover {\r\n    background-color: #45a049;\r\n}\r\n\r\n    .Photo-geo{\r\n        display: grid;\r\n        grid-template-columns: 0.5fr 0.5fr 0.5fr;\r\n        grid-template-rows: 80px 80px 80px;\r\n        gap: 10px;\r\n        padding-bottom: 100em 200em;\r\n        margin: 0 auto;\r\n        justify-content: center;\r\n        padding-top: 30px;\r\n    \r\n    }\r\n    @media (max-width: 480px) {\r\n        .Photo-geo  {\r\n          font-size: 1.2rem;\r\n          display: grid;\r\n          size: 200%;\r\n          width: 100%;\r\n      height: 100%;\r\n      object-fit: cover;\r\n      border-radius: 10px;\r\n      padding: 10px;\r\n      margin: 0 auto;\r\n      display: none;\r\n        }\r\n        }\r\n\r\n        @media (max-width: 768px) {\r\n            .photo-geo2 {\r\n                flex-wrap: wrap;\r\n                width: 100% ;\r\n                object-fit:cover;\r\n                flex-direction:column;\r\n      align-items: center;\r\n      margin: 0;\r\n\r\n            }\r\n        }\r\n        .photo-geo2 img {\r\n            display: flexbox;\r\n        grid-template-columns: 0.5fr 0.5fr 0.5fr;\r\n        grid-template-rows: 0px 10px 5px;\r\n        gap: 10px;\r\n        padding-bottom: 100em 200em;\r\n        margin: 0 auto;\r\n        max-width: 30%;\r\n        height: auto;\r\n        justify-items: flex-start;\r\n\r\n        }\r\n\r\n        .photo-geo2{\r\n            padding-top: 1em;\r\n        }\r\n        .photo2{\r\n            width: 200px;\r\n    height: auto;\r\n    border: solid 5px rgb(250,186,96);\r\n    box-shadow: -5px 5px 4px black;\r\n    border-radius: 40px;\r\n    transition: transform 0.3 ease;\r\n        }\r\n        .photo1{\r\n    border: solid 5px rgb(250, 186, 96);\r\n    box-shadow: 5px -5px 4px black;\r\n    border-radius: 40px;\r\n    transition: transform 0.3 ease;\r\n        }\r\n    .geoma{\r\n        padding-top: 20px;\r\n    }\r\n    .ini {\r\n        padding-top: 20px;\r\n    }\r\n    h3{\r\n        font-size: 2em;\r\n        font-weight: bold;\r\n        text-decoration: underline;\r\n        color:rgba(126, 126, 176, 0.774);\r\n    }\r\n    .photo1:hover {\r\n        opacity: 50%;\r\n        background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(32,121,9,1) 53%, rgba(0,212,255,1) 100%) ;\r\n        transform: scale(1.05)\r\n    }\r\n    .photo2:hover{\r\n        opacity: 50%;\r\n        background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(32,121,9,1) 53%, rgba(0,212,255,1) 100%) ;\r\n        transform:scale(1.06);\r\n\r\n\r\n    }\r\n    .buttonp {\r\n       /* padding-right: 50px;*/\r\n        margin-left: 40px;\r\n        flex-wrap: wrap;\r\n    }\r\n\r\n    h3, p {\r\n        padding-top:  10px;\r\n\r\n    }\r\n    .iPhone13p {\r\n        padding-top: 1.5em;\r\n        display: flex;\r\n        justify-content: center;\r\n        gap : 100px;\r\n        padding-bottom: 4em;\r\n        justify-items: center;\r\n        margin: 20px 0;\r\n\r\n\r\n\r\n    }\r\n\r\n    .iPhone13 {\r\n        box-shadow: 30px 50px 20px black;\r\n        border-radius: 9%;\r\n        height: auto;\r\n        transition: transform 0.3 ease;\r\n        width: 200px;\r\n\r\n    }\r\n    .iPhone13:hover{\r\n        opacity: 40%;\r\n        cursor: pointer;\r\n        transform: scale(1.05);\r\n    }\r\n\r\n    @media (max-width: 480px) {\r\n        .iPhone13 {\r\n            flex-wrap: wrap;\r\n            width: 100% ;\r\n            gap: 5px;    }\r\n        }\r\n    \r\nul{\r\n    padding-top: 20px ;\r\n}\r\n.competences {\r\n    font-size: 1.5em;\r\n    text-align: center;\r\n    display:block;\r\n    border:solid 5px;\r\n    border-radius: 5%;\r\n    box-shadow: 5px -5px 4px black;\r\n    padding: 0;\r\n    margin: 0 auto;\r\n    transition: transform 0.3 ease;\r\n}\r\n.competences:hover{\r\n    opacity: 70%;\r\n    cursor: pointer;\r\n    transform: scale(1.05);\r\n    color: #5472AE;\r\n    background:#fff\r\n\r\n\r\n}\r\n.con {\r\n    padding-top: 20px;\r\n    cursor: pointer;\r\n\r\n}\r\n.con2{\r\n    padding-top: 20px;\r\n    cursor: pointer;\r\n}\r\n.con3{\r\n    padding-top: 20px;\r\n    cursor: pointer;\r\n}\r\nlabel{\r\n    text-decoration: underline;\r\n}\r\n\r\nh2{\r\n    font-family: \"Rowdies\", sans-serif;\r\n    font-weight: bold;\r\n    font-style: normal;\r\n    font-size: 1.6em;\r\n    border: 5PX 1em;\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/style.css b/style.css
+--- a/style.css	(revision 661e3b4c58fc2d331514a23c5834b5ca551eee2d)
++++ b/style.css	(date 1731624893574)
+@@ -489,3 +489,39 @@
+     font-size: 1.6em;
+     border: 5PX 1em;
+ }
++@media (max-width: 480px) {
++        .animation  {
++          font-size: 1.2rem;
++          display: grid;
++          size: 200%;
++          width: 100%;
++      height: 100%;
++      object-fit: cover;
++      border-radius: 10px;
++      padding: 10px;
++      margin: 0 auto;
++      display: none;
++        }
++
++@media (max-width: 480px) {
++        .profile-photo  {
++          font-size: 5rem;
++          display: grid;
++          size: 200%;
++          width: 100%;
++      height: 100%;
++      object-fit: cover;
++      border-radius: 10px;
++      padding: 10px;
++      margin: 0 auto;
++        animation: bounce 2s infinite;}
++
++@keyframes bounce {
++    0%, 100% {
++      transform: translateY(0);
++    }
++    50% {
++      transform: translateY(-20px); /* L'image monte légèrement */
++    }
++  }
++}
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1731627266708)
++++ b/.idea/misc.xml	(date 1731627266708)
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="Black">
++    <option name="sdkName" value="Python 3.12 (djangoProject)" />
++  </component>
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12" project-jdk-type="Python SDK" />
++</project>
+\ No newline at end of file
+Index: index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Portfolio</title>\r\n    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"FAVicon/apple-touch-icon.png\">\r\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"FAVicon//favicon-32x32.png\">\r\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"FAVicon/favicon-16x16.png\">\r\n<link rel=\"manifest\" href=\"FAVicon/site.webmanifest\">\r\n<link rel=\"mask-icon\" href=\"FaVicon/safari-pinned-tab.svg\" color=\"#5bbad5\">\r\n<meta name=\"msapplication-TileColor\" content=\"#da532c\">\r\n<meta name=\"theme-color\" content=\"#ffffff\">\r\n<!-- HTML Meta Tags \r\n<title>Portfolio</title>\r\n<meta name=\"description\" content=\"\">\r\n -->\r\n\r\n<!-- Facebook Meta Tags -->\r\n<meta property=\"og:url\" content=\"https://ibrahimagass.github.io/Porfolio/\">\r\n<meta property=\"og:type\" content=\"website\">\r\n<meta property=\"og:title\" content=\"Portfolio\">\r\n<meta property=\"og:description\" content=\"\">\r\n<meta property=\"og:image\" content=\"https://ogcdn.net/e4b8c678-7bd5-445d-ba03-bfaad510c686/v4/ibrahimagass.github.io/Portfolio/https%3A%2F%2Fopengraph.b-cdn.net%2Fproduction%2Fimages%2Fbe5ca0ad-ae24-4696-9a41-a579d65cf9f2.png%3Ftoken%3DKNTXGKfeE00AP_Yp8aTuUf43lQGg_fctmC1VEzwT7Aw%26height%3D300%26width%3D1200%26expires%3D33258774121/og.png\">\r\n\r\n<!-- Twitter Meta Tags -->\r\n<meta name=\"twitter:card\" content=\"summary_large_image\">\r\n<meta property=\"twitter:domain\" content=\"ibrahimagass.github.io\">\r\n<meta property=\"twitter:url\" content=\"https://ibrahimagass.github.io/Porfolio/\">\r\n<meta name=\"twitter:title\" content=\"Portfolio\">\r\n<meta name=\"twitter:description\" content=\"\">\r\n<meta name=\"twitter:image\" content=\"https://ogcdn.net/e4b8c678-7bd5-445d-ba03-bfaad510c686/v4/ibrahimagass.github.io/Portfolio/https%3A%2F%2Fopengraph.b-cdn.net%2Fproduction%2Fimages%2Fbe5ca0ad-ae24-4696-9a41-a579d65cf9f2.png%3Ftoken%3DKNTXGKfeE00AP_Yp8aTuUf43lQGg_fctmC1VEzwT7Aw%26height%3D300%26width%3D1200%26expires%3D33258774121/og.png\">\r\n\r\n<!-- Meta Tags Generated via https://www.opengraph.xyz -->\r\n    \r\n    <link href=\"style.css\" rel=\"stylesheet\">\r\n    <!-- Google tag (gtag.js) -->\r\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-X9X77YS244\"></script>\r\n<script>\r\n  window.dataLayer = window.dataLayer || [];\r\n  function gtag(){dataLayer.push(arguments);}\r\n  gtag('js', new Date());\r\n\r\n  gtag('config', 'G-X9X77YS244');\r\n</script>\r\n</head>\r\n<body>\r\n    <nav>\r\n        <ul>\r\n            <li><a href=\"#accueil\">Accueil</a></li>\r\n            <li><a href=\"#apropos\">À propos</a></li>\r\n            <li><a href=\"#contact\">Contact</a></li>\r\n        </ul>\r\n    </nav>\r\n    <header id=\"accueil\">\r\n        <h1>Portfolio de Ibrahima GASSAMA</h1>\r\n    </header>\r\n    <div class=\"containe\">\r\n        <section id=\"apropos\" class=\"section\">\r\n            <h2>À propos de moi</h2>\r\n            <div class=\"profile-container\">\r\n                <img src=\"Photoprofil.jpg\" alt=\"Photo de moi\" class=\"profile-photo\">\r\n                <main class=\"container\">\r\n                    <p>Hello \uD83D\uDC4B je suis</p>\r\n                    <section class=\"animation\">\r\n                        <div class=\"first\"><div>Ibrahima GASSAMA</div></div>\r\n                        <div class=\"second\"><div>Web Developer junior</div></div>\r\n                        <div class=\"third\"><div>Etudiant en éco-gestion</div></div>\r\n                    </section>\r\n                </main>\r\n            </div>\r\n            <p class=\"descrition\">Je suis actuellement étudiant en L2 Économie et Management de la santé - accés santé à l'Université <b>Paris-Est Creteil</b>. Passionné par les technologies web, je suis en train de me réorienter vers le développement web pour fusionner mes compétences analytiques et ma passion pour l'innovation technologique. J'ai développé plusieurs projets personnels et académiques en géographie et en développement web, ce qui m'a permis d'acquérir des compétences solides en HTML, CSS, JavaScript et en analyse spatiale.</p>\r\n                <p class=\"descrition\">Mon objectif est de devenir un développeur web polyvalent, capable de créer des applications innovantes qui résolvent des problèmes réels. En parallèle de mes études, j'ai suivi plusieurs cours en ligne sur des plateformes comme Udemy et Coursera pour approfondir mes connaissances en développement web. J'ai également participé à des hackathons et des projets collaboratifs, où j'ai pu travailler en équipe et apprendre des meilleures pratiques de l'industrie.</p>\r\n                <p class=\"descrition\">En dehors de la programmation, j'ai un intérêt marqué pour l'analyse des données géospatiales et les systèmes d'information géographique (SIG). Ces compétences me permettent de comprendre et de visualiser les données géographiques de manière innovante, et je cherche constamment à intégrer ces connaissances dans mes projets de développement web.</p>\r\n            <div class=\"button-container\">\r\n                <a href=\"CV.pdf\" class=\"download-cv-button\" download>Télécharger mon CV</a>\r\n            </div>\r\n        </section>\r\n        <section class=\"section\">\r\n            <h2>Projets en Géographie</h2>\r\n            <div class=\"project\">\r\n                <h3>Géomatique</h3>\r\n                <p class=\"geoma\">Dans le cadre de ce projet, j'ai travaillé sur l'application des technologies géospatiales pour la collecte, l'analyse et la visualisation des données géographiques. J'ai utilisé des logiciels comme QGIS et ArcGIS pour créer des cartes interactives et des analyses spatiales détaillées. Ce projet m'a permis de comprendre l'importance des SIG dans la gestion des ressources naturelles et la planification urbaine.</p>\r\n                <Div class=\"Photo-geo\">\r\n                    <img src=\"projet 1 geo.png\" alt=\"Image du projet web 2\" class=\"photo1\">\r\n                </Div>\r\n            </div>\r\n            <div class=\"project\">\r\n                <h3>Initiation à la Botanique</h3>\r\n                <p class=\"ini\">Ce projet consistait à étudier la diversité végétale dans différents environnements urbains et ruraux. J'ai collecté des échantillons de plantes, identifié les espèces et analysé les données pour comprendre la répartition de la flore. Ce projet m'a donné une perspective unique sur l'interaction entre les environnements naturels et construits, et m'a aidé à développer des compétences en recherche et en analyse des données biologiques.</p>\r\n                <div class=\"photo-geo2\">\r\n                <img src=\"Projet 2 Geo.jpg\" alt=\"Image du projet 2\" class=\"photo2\">\r\n                </div>\r\n                <div class=\"buttonp\">\r\n                    <a href=\"FINAL DOC.pdf\" class=\"download-project-button\" download>Télécharger</a>\r\n                </div>\r\n            </div>\r\n        </section>\r\n        <section class=\"section\">\r\n            <h2>Projets en Développement Web</h2>\r\n            <div class=\"project\">\r\n                <h3> Site Web de Portfolio</h3>\r\n                <p class=\"portfolio\">Ce projet est un site web de portfolio personnel que j'ai développé pour présenter mes compétences et mes projets. Il est construit en utilisant HTML, CSS et JavaScript, avec une mise en page responsive pour s'adapter à tous les types d'écrans. Le site comprend une section Acceuil, une section À propos, un formulaire de contact et des boutons de téléchargement de (CV et Projets).</p>\r\n                <div class=\"iPhone13p\">\r\n                <img src=\"iPhone-13-PRO-127.0.0.1.png\" alt=\"Image du projet web 1\" class=\"iPhone13\">\r\n                <img src=\"Galaxy-Tab-S7-127.0.0.1.png\" alt=\"Image du projet web 2\" class=\"iPhone13\">\r\n            </div>\r\n            </div>\r\n            <div class=\"project\">\r\n                <h3>Application To-Do List</h3>\r\n                <p>Cette application web permet aux utilisateurs de créer, gérer et organiser leurs tâches quotidiennes. Développée en utilisant React.js, l'application offre une interface utilisateur intuitive et réactive. Les fonctionnalités incluent l'ajout de tâches, la suppression de tâches, la modification de tâches et le marquage des tâches comme terminées.</p>\r\n            </div>\r\n        </section>\r\n        <section class=\"section\">\r\n            <h2>Compétences</h2>\r\n            <ul>\r\n                    <li class=\"competences\">Géomatique </li>\r\n                    <li class=\"competences\">Cartographie</li>\r\n                    <li class=\"competences\">Analyse spatiale</li>\r\n                    <li class=\"competences\">Botanique</li>\r\n                    <li class=\"competences\">HTML, CSS, JavaScript</li>\r\n                    <li class=\"competences\">React.js, Node.js</li>\r\n                    <li class=\"competences\">MongoDB</li>\r\n                    <li class=\"competences\">Git et GitHub</li>\r\n            </ul>\r\n        </section>\r\n        <section class=\"section contact-form\" id=\"contact\" >\r\n            <h2>Contact</h2>\r\n            <form action=\"https://formspree.io/f/xzzpzgwn\" method=\"post\">\r\n                <div class=\"con\">\r\n                    <label for=\"name\">Nom et Prénom:</label>\r\n                <input type=\"text\" name=\"name\" placeholder=\"\" required>\r\n            </div>\r\n            <div class=\"con2\">\r\n                <label for=\"email\">Email:</label>\r\n                <input type=\"email\" name=\"email\" placeholder= \"\" required>\r\n            </div>\r\n            <div class=\"con3\">\r\n                <label for=\"message\">Message:</label>\r\n             <textarea name=\"message\" placeholder=\"\" required></textarea>\r\n            </div>\r\n                <button type=\"submit\">Envoyer</button>\r\n            </form>\r\n        </section>\r\n    </div>   \r\n    <footer>\r\n        <div>\r\n            <a target=\"_blank\" href=\"https://twitter.com/\" class=\"lien-icone\">\r\n                <img src=\"twitter.png\" alt=\"Logo Twitter\" >\r\n            </a>\r\n            <a target=\"_blank\" href=\"https://www.instagram.com/\" class=\"lien-icone\">\r\n                <img src=\"instagram.png\" alt=\"Logo Instagram\" >\r\n            </a>\r\n        </div>\r\n        <span><p>&copy; <span>2024 <em> Ibrahima GASSAMA </em>. Tous droits réservés.</p></span>\r\n    </footer>\r\n</body>\r\n</html>\r\n\r\n            \r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/index.html b/index.html
+--- a/index.html	(revision 661e3b4c58fc2d331514a23c5834b5ca551eee2d)
++++ b/index.html	(date 1731625073579)
+@@ -61,11 +61,11 @@
+             <div class="profile-container">
+                 <img src="Photoprofil.jpg" alt="Photo de moi" class="profile-photo">
+                 <main class="container">
+-                    <p>Hello 👋 je suis</p>
++                    <p class="animation">Hello 👋 je suis</p>
+                     <section class="animation">
+                         <div class="first"><div>Ibrahima GASSAMA</div></div>
+-                        <div class="second"><div>Web Developer junior</div></div>
+-                        <div class="third"><div>Etudiant en éco-gestion</div></div>
++                        <div class="second"><div>Passionné d'informatique</div></div>
++                        <div class="third"><div>Etudiant en Economie</div></div>
+                     </section>
+                 </main>
+             </div>
+Index: .idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1731622558723)
++++ b/.idea/.gitignore	(date 1731622558723)
+@@ -0,0 +1,8 @@
++# Default ignored files
++/shelf/
++/workspace.xml
++# Editor-based HTTP Client requests
++/httpRequests/
++# Datasource local storage ignored files
++/dataSources/
++/dataSources.local.xml
+Index: .idea/inspectionProfiles/profiles_settings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/inspectionProfiles/profiles_settings.xml b/.idea/inspectionProfiles/profiles_settings.xml
+new file mode 100644
+--- /dev/null	(date 1731622569653)
++++ b/.idea/inspectionProfiles/profiles_settings.xml	(date 1731622569653)
+@@ -0,0 +1,6 @@
++<component name="InspectionProjectProfileManager">
++  <settings>
++    <option name="USE_PROJECT_PROFILE" value="false" />
++    <version value="1.0" />
++  </settings>
++</component>
+\ No newline at end of file
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1731622569643)
++++ b/.idea/modules.xml	(date 1731622569643)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/Porfolio.iml" filepath="$PROJECT_DIR$/.idea/Porfolio.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1731627266716)
++++ b/.idea/vcs.xml	(date 1731627266716)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/Porfolio.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/Porfolio.iml b/.idea/Porfolio.iml
+new file mode 100644
+--- /dev/null	(date 1731627266701)
++++ b/.idea/Porfolio.iml	(date 1731627266701)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="PYTHON_MODULE" version="4">
++  <component name="NewModuleRootManager">
++    <content url="file://$MODULE_DIR$" />
++    <orderEntry type="jdk" jdkName="Python 3.12" jdkType="Python SDK" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
