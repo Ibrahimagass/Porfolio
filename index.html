@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV Portfolio | Ibrahima GASSAMA</title>
+  <title>Portfolio Master | Ibrahima GASSAMA</title>
   <link rel="apple-touch-icon" sizes="180x180" href="FAVicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="FAVicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="FAVicon/favicon-16x16.png">
   <link rel="manifest" href="FAVicon/site.webmanifest">
-  <meta name="theme-color" content="#f2f4f8">
+  <meta name="theme-color" content="#0d122b">
   <meta property="og:url" content="https://ibrahimagass.github.io/Porfolio/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="CV Portfolio | Ibrahima GASSAMA">
-  <meta property="og:description" content="Portfolio/CV pour candidature en Master : parcours académique, expériences et projets.">
+  <meta property="og:title" content="Portfolio Master | Ibrahima GASSAMA">
+  <meta property="og:description" content="Candidature Master en Économie de la Santé, Santé Publique et Économie du Développement.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-X9X77YS244"></script>
   <script>
@@ -26,205 +26,253 @@
   </script>
 </head>
 <body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+
   <header class="topbar">
     <div class="container topbar-content">
-      <p class="brand">Ibrahima <span>GASSAMA</span></p>
+      <a href="#accueil" class="brand">Ibrahima <span>GASSAMA</span></a>
       <nav>
         <ul class="nav-links">
-          <li><a href="#formation">Formation</a></li>
-          <li><a href="#experience">Expérience</a></li>
+          <li><a href="#parcours">Parcours</a></li>
+          <li><a href="#master">Projet Master</a></li>
           <li><a href="#projets">Projets</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <a class="btn btn-outline" href="CV.pdf" download>Télécharger le CV</a>
+      <a class="btn btn-outline" href="CV.pdf" download>CV PDF</a>
     </div>
   </header>
 
-  <main class="container page-layout">
-    <aside class="sidebar reveal-up">
-      <div class="photo-block">
-        <img src="Photoprofil.jpg" alt="Photo de Ibrahima GASSAMA" class="profile-photo">
-        <h1>IBRAHIMA <span>GASSAMA</span></h1>
-        <p>
-          Étudiant en 3e année de Licence Économie et Management de la Santé à l'UPEC.
-          Curieux, autonome et motivé, je souhaite intégrer un Master pour construire une
-          expertise solide en analyse de données, innovation et numérique.
+  <main id="accueil" class="container">
+    <section class="hero reveal">
+      <div class="hero-left">
+        <p class="kicker">Candidature Master 2026</p>
+        <h1>Économie de la santé, santé publique et développement</h1>
+        <p class="hero-text">
+          Étudiant en Licence Économie et Management de la Santé (UPEC), je souhaite intégrer un Master
+          en <strong>économie de la santé</strong>, <strong>santé publique</strong> ou <strong>économie du développement</strong>.
+          Mon objectif : relier analyse économique, politiques publiques et outils numériques.
         </p>
+        <div class="hero-actions">
+          <a class="btn" href="#master">Voir mon projet académique</a>
+          <a class="btn btn-outline" href="#contact">Me contacter</a>
+        </div>
+        <div class="stats-row">
+          <article class="stat-card tilt">
+            <p class="stat-value" data-count="3">0</p>
+            <p>Années universitaires en économie/santé</p>
+          </article>
+          <article class="stat-card tilt">
+            <p class="stat-value" data-count="2">0</p>
+            <p>Expériences professionnelles terrain</p>
+          </article>
+          <article class="stat-card tilt">
+            <p class="stat-value" data-count="5">0</p>
+            <p>Domaines de compétences analytiques</p>
+          </article>
+        </div>
       </div>
-
-      <section class="side-section">
-        <h2>Coordonnées</h2>
+      <aside class="hero-profile tilt">
+        <img src="Photoprofil.jpg" alt="Photo de Ibrahima GASSAMA" class="profile-photo">
+        <h2>IBRAHIMA <span>GASSAMA</span></h2>
+        <p>Disponible pour entretien de sélection Master.</p>
         <ul>
-          <li>Ibrahimagassama003@gmail.com</li>
-          <li>07 53 10 93 28</li>
-          <li>https://ibrahimagass.github.io/Porfolio/</li>
-          <li>21 Rue de Rome - Alfortville 94140</li>
+          <li>📍 Alfortville, Île-de-France</li>
+          <li>📧 Ibrahimagassama003@gmail.com</li>
+          <li>📱 07 53 10 93 28</li>
         </ul>
-      </section>
+      </aside>
+    </section>
 
-      <section class="side-section">
-        <h2>Langues</h2>
-        <ul>
-          <li>Français : langue maternelle</li>
-          <li>Wolof : langue maternelle</li>
-          <li>Anglais : lu, écrit et parlé (B2)</li>
-          <li>Arabe : lu, écrit et parlé</li>
-        </ul>
-      </section>
+    <section id="parcours" class="section reveal">
+      <div class="section-head">
+        <p class="kicker">CV académique</p>
+        <h2>Parcours orienté économie et politiques de santé</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item tilt">
+          <h3>Licence 3 — Économie et Management de la Santé</h3>
+          <p>Université Paris-Est Créteil • 2025-2026</p>
+          <ul>
+            <li>Analyse économique des systèmes de santé.</li>
+            <li>Évaluation des politiques publiques et indicateurs de performance.</li>
+          </ul>
+        </article>
+        <article class="timeline-item tilt">
+          <h3>Licence 2 — Économie et Management de la Santé</h3>
+          <p>Université Paris-Est Créteil • 2024-2025</p>
+          <ul>
+            <li>Statistiques appliquées à l’économie et à la santé.</li>
+            <li>Approche quantitative des enjeux médico-économiques.</li>
+          </ul>
+        </article>
+        <article class="timeline-item tilt">
+          <h3>Licence 1 & 2 — Géographie et Aménagement</h3>
+          <p>Université Sorbonne Paris Nord • 2022-2024</p>
+          <ul>
+            <li>Socle méthodologique en traitement de données territoriales.</li>
+            <li>Compétence complémentaire utile pour les inégalités de santé.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
 
-      <section class="side-section">
-        <h2>Compétences</h2>
-        <h3>Logiciels & outils</h3>
-        <ul>
-          <li>Excel avancé</li>
-          <li>Python (notions)</li>
-          <li>Power BI (notions)</li>
-          <li>SQL (notions)</li>
-          <li>QGIS / ArcGIS</li>
-        </ul>
-        <h3>Compétences acquises</h3>
-        <ul>
-          <li>Économie & management de la santé</li>
-          <li>Économétrie et statistiques appliquées</li>
-          <li>Analyse des politiques publiques de santé</li>
-          <li>Droit de la santé</li>
-          <li>Géomatique / SIG</li>
-          <li>Esprit d'analyse</li>
-        </ul>
-      </section>
+    <section id="master" class="section reveal">
+      <div class="section-head">
+        <p class="kicker">Objectif académique</p>
+        <h2>Pourquoi ce Master ?</h2>
+      </div>
+      <div class="master-grid">
+        <article class="master-card tilt">
+          <h3>Économie de la santé</h3>
+          <p>Étudier l'allocation des ressources, l'efficience des politiques de santé et l'évaluation médico-économique.</p>
+        </article>
+        <article class="master-card tilt">
+          <h3>Santé publique</h3>
+          <p>Contribuer à la décision publique via la donnée, la prévention et les stratégies d'amélioration des systèmes de soins.</p>
+        </article>
+        <article class="master-card tilt">
+          <h3>Économie du développement</h3>
+          <p>Analyser les inégalités et proposer des réponses économiques adaptées aux enjeux sociaux et sanitaires.</p>
+        </article>
+      </div>
+    </section>
 
-      <section class="side-section">
-        <h2>Loisirs & engagements</h2>
-        <ul>
-          <li>Natation</li>
-          <li>Basketball</li>
-          <li>Voyage</li>
-          <li>Théâtre d'improvisation</li>
-          <li>Membre actif - RESPEC</li>
-        </ul>
-      </section>
-    </aside>
+    <section id="projets" class="section reveal">
+      <div class="section-head">
+        <p class="kicker">Projets</p>
+        <h2>Travaux mettant en avant l'approche économique</h2>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card tilt">
+          <div class="project-badge">Économie appliquée</div>
+          <h3>Analyse des politiques publiques de santé</h3>
+          <p>Étude comparative d'indicateurs économiques et sanitaires pour comprendre l'impact des politiques sur les populations.</p>
+        </article>
+        <article class="project-card tilt">
+          <div class="project-badge">Quantitatif</div>
+          <h3>Statistiques & visualisation</h3>
+          <p>Exploitation de données avec Excel/Python (notions) pour produire des synthèses lisibles pour la décision.</p>
+        </article>
+        <article class="project-card tilt">
+          <div class="project-badge">Numérique</div>
+          <h3>Portfolio de candidature</h3>
+          <p>Site web moderne orienté entretien Master, conçu pour présenter mon parcours, mes objectifs et mes compétences.</p>
+          <div class="project-screens">
+            <img src="iPhone-13-PRO-127.0.0.1.png" alt="Portfolio mobile">
+            <img src="Galaxy-Tab-S7-127.0.0.1.png" alt="Portfolio tablette">
+          </div>
+        </article>
+      </div>
+    </section>
 
-    <section class="main-panel">
-      <section id="formation" class="card reveal-up">
-        <p class="section-kicker">Parcours académique</p>
-        <h2>Formation</h2>
-        <div class="timeline">
-          <article>
-            <h3>Licence 3 Économie et Management de la Santé</h3>
-            <p>Université Paris-Est Créteil • 2025-2026</p>
-          </article>
-          <article>
-            <h3>Licence 2 Économie et Management de la Santé</h3>
-            <p>Université Paris-Est Créteil • 2024-2025</p>
-          </article>
-          <article>
-            <h3>Licence 2 Géographie et Aménagement</h3>
-            <p>Université Sorbonne Paris Nord, Villetaneuse • 2023-2024</p>
-          </article>
-          <article>
-            <h3>Licence 1 Géographie et Aménagement</h3>
-            <p>Université Sorbonne Paris Nord, Villetaneuse • 2022-2023</p>
-          </article>
-          <article>
-            <h3>Baccalauréat L2</h3>
-            <p>Lycée Sergent Malamine Camara (Dakar) • 2021-2022 • Mention Bien</p>
-          </article>
-        </div>
-      </section>
+    <section class="section reveal">
+      <div class="section-head">
+        <p class="kicker">Compétences</p>
+        <h2>Compétences clés pour un Master en économie & santé</h2>
+      </div>
+      <div class="chips">
+        <span>Économie de la santé</span>
+        <span>Économétrie / statistiques</span>
+        <span>Analyse de politiques publiques</span>
+        <span>Droit de la santé</span>
+        <span>Excel avancé</span>
+        <span>Python (notions)</span>
+        <span>Power BI (notions)</span>
+        <span>SQL (notions)</span>
+        <span>Communication écrite/orale</span>
+      </div>
+    </section>
 
-      <section id="experience" class="card reveal-up delay-1">
-        <p class="section-kicker">Terrain & responsabilités</p>
-        <h2>Expérience</h2>
-        <div class="timeline">
-          <article>
-            <h3>Employé Polyvalent — Responsable week-end</h3>
-            <p>Mous (Aulnay-sous-Bois) • Févr. 2023 — Présent</p>
-            <ul>
-              <li>Organisation et gestion du bon fonctionnement du magasin le week-end.</li>
-              <li>Gestion des stocks et commandes.</li>
-              <li>Coordination de l'équipe et répartition des tâches.</li>
-              <li>Encaissement, mise en rayon, ouverture et fermeture.</li>
-            </ul>
-          </article>
-          <article>
-            <h3>Employé Polyvalent — Restaurant Le Lagon</h3>
-            <p>Le Lagon, Dakar (Sénégal) • Été 2021</p>
-            <ul>
-              <li>Service en salle et encaissement.</li>
-              <li>Participation aux commandes et réception de livraisons.</li>
-              <li>Entretien et bonne tenue de l'établissement.</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section id="projets" class="card reveal-up delay-2">
-        <p class="section-kicker">Démonstration des compétences</p>
-        <h2>Projets académiques</h2>
-        <div class="projects-grid">
-          <article class="project-item">
-            <img src="projet 1 geo.png" alt="Projet géomatique">
-            <div>
-              <h3>Analyse spatiale (SIG)</h3>
-              <p>Traitement et visualisation de données géographiques avec QGIS / ArcGIS.</p>
-            </div>
-          </article>
-          <article class="project-item">
-            <img src="Projet 2 Geo.jpg" alt="Projet botanique">
-            <div>
-              <h3>Initiation à la botanique</h3>
-              <p>Analyse de la diversité végétale, terrain et restitution écrite du rapport.</p>
-              <a class="project-link" href="FINAL DOC.pdf" download>Télécharger le rapport</a>
-            </div>
-          </article>
-          <article class="project-item">
-            <div class="project-screens">
-              <img src="iPhone-13-PRO-127.0.0.1.png" alt="Portfolio mobile">
-              <img src="Galaxy-Tab-S7-127.0.0.1.png" alt="Portfolio tablette">
-            </div>
-            <div>
-              <h3>Portfolio personnel</h3>
-              <p>Site web responsive utilisé comme support d'entretien pour les candidatures Master.</p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section id="contact" class="card reveal-up">
-        <p class="section-kicker">Échange académique</p>
-        <h2>Contact</h2>
-        <div class="contact-layout">
+    <section id="contact" class="section reveal">
+      <div class="section-head">
+        <p class="kicker">Contact</p>
+        <h2>Échangeons sur ma candidature en Master</h2>
+      </div>
+      <div class="contact-grid">
+        <article class="contact-card tilt">
           <p>
-            Je suis disponible pour présenter mon parcours et mes motivations lors d'un entretien.
-            Vous pouvez me contacter via ce formulaire.
+            Je peux présenter mon parcours, mes motivations et mon projet professionnel lors d'un entretien.
+            Je suis particulièrement motivé par les formations en économie de la santé et santé publique.
           </p>
-          <form class="contact-form" action="https://formspree.io/f/xzzpzgwn" method="post">
-            <label for="name">Nom et prénom</label>
-            <input type="text" id="name" name="name" required>
+          <p class="small">Lien portfolio : ibrahimagass.github.io/Porfolio</p>
+        </article>
+        <form class="contact-form" action="https://formspree.io/f/xzzpzgwn" method="post">
+          <label for="name">Nom et prénom</label>
+          <input type="text" id="name" name="name" required>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
 
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
 
-            <button class="btn" type="submit">Envoyer</button>
-          </form>
-        </div>
-      </section>
+          <button class="btn" type="submit">Envoyer</button>
+        </form>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container footer-content">
-      <p>&copy; 2024 Ibrahima GASSAMA — Portfolio CV Master.</p>
+      <p>© 2024 Ibrahima GASSAMA — Portfolio Master économie & santé.</p>
       <div class="social-links">
         <a target="_blank" href="https://twitter.com/"><img src="twitter.png" alt="Twitter"></a>
         <a target="_blank" href="https://www.instagram.com/"><img src="instagram.png" alt="Instagram"></a>
       </div>
     </div>
   </footer>
+
+  <script>
+    const revealElements = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) entry.target.classList.add('show');
+      });
+    }, { threshold: 0.2 });
+    revealElements.forEach((el) => observer.observe(el));
+
+    const counters = document.querySelectorAll('.stat-value');
+    const animateCounter = (el) => {
+      const target = Number(el.dataset.count);
+      let current = 0;
+      const step = Math.max(1, Math.round(target / 20));
+      const interval = setInterval(() => {
+        current += step;
+        if (current >= target) {
+          el.textContent = `${target}+`;
+          clearInterval(interval);
+        } else {
+          el.textContent = `${current}`;
+        }
+      }, 40);
+    };
+
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && !entry.target.dataset.done) {
+          entry.target.dataset.done = 'true';
+          animateCounter(entry.target);
+        }
+      });
+    }, { threshold: 0.6 });
+    counters.forEach((c) => counterObserver.observe(c));
+
+    const tiltCards = document.querySelectorAll('.tilt');
+    tiltCards.forEach((card) => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const rx = ((y / rect.height) - 0.5) * -6;
+        const ry = ((x / rect.width) - 0.5) * 6;
+        card.style.transform = `perspective(800px) rotateX(${rx}deg) rotateY(${ry}deg) translateY(-2px)`;
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = '';
+      });
+    });
+  </script>
 </body>
 </html>
