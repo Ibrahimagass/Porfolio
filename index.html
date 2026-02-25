@@ -1,291 +1,212 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Master | Ibrahima GASSAMA</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="FAVicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="FAVicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="FAVicon/favicon-16x16.png">
-  <link rel="manifest" href="FAVicon/site.webmanifest">
-  <meta name="theme-color" content="#0d122b">
-  <meta property="og:url" content="https://ibrahimagass.github.io/Porfolio/">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Portfolio Master | Ibrahima GASSAMA">
-  <meta property="og:description" content="Candidature Master en Économie de la Santé, Santé Publique et Économie du Développement.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X9X77YS244"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-X9X77YS244');
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Ibrahima GASSAMA</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="FAVicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="FAVicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="FAVicon/favicon-16x16.png">
+    <link rel="manifest" href="FAVicon/site.webmanifest">
+    <meta name="theme-color" content="#f7f8fc">
+
+    <meta property="og:url" content="https://ibrahimagass.github.io/Porfolio/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Portfolio - Ibrahima GASSAMA">
+    <meta property="og:description" content="Portfolio académique et projets de Ibrahima GASSAMA.">
+
+    <link href="style.css" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X9X77YS244"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X9X77YS244');
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="bg-orb orb-1"></div>
-  <div class="bg-orb orb-2"></div>
-
-  <header class="topbar">
-    <div class="container topbar-content">
-      <a href="#accueil" class="brand">Ibrahima <span>GASSAMA</span></a>
-      <nav>
+    <nav class="top-nav">
+        <div class="brand">
+            <span class="brand-dot"></span>
+            <span>Ibrahima GASSAMA</span>
+        </div>
         <ul class="nav-links">
-          <li><a href="#parcours">Parcours</a></li>
-          <li><a href="#master">Projet Master</a></li>
-          <li><a href="#projets">Projets</a></li>
-          <li><a href="#contact">Contact</a></li>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#parcours">Parcours académique</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-      </nav>
-      <a class="btn btn-outline" href="CV.pdf" download>CV PDF</a>
-    </div>
-  </header>
+        <a class="button button-outline" href="CV.pdf" download>Télécharger mon CV</a>
+    </nav>
 
-  <main id="accueil" class="container">
-    <section class="hero reveal">
-      <div class="hero-left">
-        <p class="kicker">Candidature Master 2026</p>
-        <h1>Économie de la santé, santé publique et développement</h1>
-        <p class="hero-text">
-          Étudiant en Licence Économie et Management de la Santé (UPEC), je souhaite intégrer un Master
-          en <strong>économie de la santé</strong>, <strong>santé publique</strong> ou <strong>économie du développement</strong>.
-          Mon objectif : relier analyse économique, politiques publiques et outils numériques.
-        </p>
-        <div class="hero-actions">
-          <a class="btn" href="#master">Voir mon projet académique</a>
-          <a class="btn btn-outline" href="#contact">Me contacter</a>
+    <header id="accueil" class="hero container">
+        <div class="hero-text reveal-up">
+            <p class="overline">Candidature Master</p>
+            <h1>Portfolio académique & projets</h1>
+            <p>
+                Je suis étudiant en L3 Économie et Management de la santé (accès santé),
+                et je souhaite intégrer un <strong>Master orienté data, numérique et innovation</strong>.
+                Ce portfolio présente mon parcours, mes travaux académiques et mes compétences techniques.
+            </p>
+            <div class="hero-actions">
+                <a class="button" href="#parcours">Voir mon parcours</a>
+                <a class="button button-outline" href="CV.pdf" download>CV (PDF)</a>
+            </div>
         </div>
-        <div class="stats-row">
-          <article class="stat-card tilt">
-            <p class="stat-value" data-count="3">0</p>
-            <p>Années universitaires en économie/santé</p>
-          </article>
-          <article class="stat-card tilt">
-            <p class="stat-value" data-count="2">0</p>
-            <p>Expériences professionnelles terrain</p>
-          </article>
-          <article class="stat-card tilt">
-            <p class="stat-value" data-count="5">0</p>
-            <p>Domaines de compétences analytiques</p>
-          </article>
+        <article class="hero-card reveal-up delay-1">
+            <img src="Photoprofil.jpg" alt="Photo de Ibrahima GASSAMA" class="profile-photo">
+            <div>
+                <p class="card-label">Objectif 2026</p>
+                <h2>Intégrer un Master</h2>
+                <ul class="mini-list">
+                    <li>Analyse de données</li>
+                    <li>Développement web</li>
+                    <li>Géomatique & SIG</li>
+                </ul>
+            </div>
+        </article>
+    </header>
+
+    <main class="container main-content">
+        <section id="parcours" class="section">
+            <div class="section-header reveal-up">
+                <p class="overline">CV académique</p>
+                <h2>Parcours académique</h2>
+            </div>
+
+            <div class="timeline">
+                <article class="timeline-item reveal-up">
+                    <div class="timeline-date">2023 - 2024</div>
+                    <div class="timeline-content">
+                        <h3>L3 Économie et Management de la santé (accès santé)</h3>
+                        <p><strong>Université Paris-Est Créteil</strong></p>
+                        <p>Approfondissement en économie, politiques de santé, méthodes quantitatives et analyse de données.</p>
+                    </div>
+                </article>
+
+                <article class="timeline-item reveal-up delay-1">
+                    <div class="timeline-date">2022 - 2023</div>
+                    <div class="timeline-content">
+                        <h3>L2 Économie - parcours santé</h3>
+                        <p><strong>Université Paris-Est Créteil</strong></p>
+                        <p>Consolidation des bases en macroéconomie, microéconomie, statistiques et méthodologie universitaire.</p>
+                    </div>
+                </article>
+
+                <article class="timeline-item reveal-up delay-2">
+                    <div class="timeline-date">2021 - 2022</div>
+                    <div class="timeline-content">
+                        <h3>L1 Économie</h3>
+                        <p><strong>Université Paris-Est Créteil</strong></p>
+                        <p>Introduction aux fondamentaux de l’économie, des mathématiques appliquées et des outils numériques.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="projets" class="section">
+            <div class="section-header reveal-up">
+                <p class="overline">Travaux académiques</p>
+                <h2>Projets sélectionnés</h2>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card reveal-up">
+                    <img src="projet 1 geo.png" alt="Projet de géomatique">
+                    <div>
+                        <p class="project-tag">Géomatique</p>
+                        <h3>Analyse spatiale avec QGIS / ArcGIS</h3>
+                        <p>Visualisation de données géographiques et production de cartes thématiques pour la décision.</p>
+                    </div>
+                </article>
+
+                <article class="project-card reveal-up delay-1">
+                    <img src="Projet 2 Geo.jpg" alt="Projet botanique">
+                    <div>
+                        <p class="project-tag">Botanique</p>
+                        <h3>Initiation à la Botanique</h3>
+                        <p>Observation de la diversité végétale, collecte terrain et analyse des résultats.</p>
+                        <a class="link" href="FINAL DOC.pdf" download>Télécharger le rapport</a>
+                    </div>
+                </article>
+
+                <article class="project-card reveal-up delay-2">
+                    <div class="dual-images">
+                        <img src="iPhone-13-PRO-127.0.0.1.png" alt="Version mobile du portfolio">
+                        <img src="Galaxy-Tab-S7-127.0.0.1.png" alt="Version tablette du portfolio">
+                    </div>
+                    <div>
+                        <p class="project-tag">Web</p>
+                        <h3>Portfolio responsive</h3>
+                        <p>Site vitrine personnel développé en HTML/CSS/JavaScript, optimisé pour plusieurs formats d’écran.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="competences" class="section">
+            <div class="section-header reveal-up">
+                <p class="overline">Profil</p>
+                <h2>Compétences clés</h2>
+            </div>
+            <div class="skills-grid reveal-up delay-1">
+                <span>Économie de la santé</span>
+                <span>Analyse statistique</span>
+                <span>Géomatique & cartographie</span>
+                <span>HTML / CSS / JavaScript</span>
+                <span>React.js / Node.js</span>
+                <span>MongoDB</span>
+                <span>Méthodologie de recherche</span>
+                <span>Travail en équipe</span>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="section-header reveal-up">
+                <p class="overline">Contact</p>
+                <h2>Échangeons sur ma candidature</h2>
+            </div>
+            <div class="contact-grid">
+                <article class="contact-card reveal-up">
+                    <h3>Objectif</h3>
+                    <p>
+                        Je recherche un Master pour renforcer mes compétences en analyse de données,
+                        innovation numérique et développement d’outils utiles aux décideurs.
+                    </p>
+                    <p class="contact-small">Disponible pour entretien académique.</p>
+                </article>
+
+                <form class="contact-form reveal-up delay-1" action="https://formspree.io/f/xzzpzgwn" method="post">
+                    <label for="name">Nom et Prénom</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button class="button" type="submit">Envoyer</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2024 <strong>Ibrahima GASSAMA</strong> - Tous droits réservés.</p>
+            <div class="social-links">
+                <a target="_blank" href="https://twitter.com/" class="lien-icone">
+                    <img src="twitter.png" alt="Logo Twitter">
+                </a>
+                <a target="_blank" href="https://www.instagram.com/" class="lien-icone">
+                    <img src="instagram.png" alt="Logo Instagram">
+                </a>
+            </div>
         </div>
-      </div>
-      <aside class="hero-profile tilt">
-        <img src="Photoprofil.jpg" alt="Photo de Ibrahima GASSAMA" class="profile-photo">
-        <h2>IBRAHIMA <span>GASSAMA</span></h2>
-        <p>Disponible pour entretien de sélection Master.</p>
-        <ul>
-          <li>📍 Alfortville, Île-de-France</li>
-          <li>📧 Ibrahimagassama003@gmail.com</li>
-          <li>📱 07 53 10 93 28</li>
-        </ul>
-      </aside>
-    </section>
-
-    <section id="parcours" class="section reveal">
-      <div class="section-head">
-        <p class="kicker">CV académique</p>
-        <h2>Parcours orienté économie et politiques de santé</h2>
-      </div>
-      <div class="timeline">
-        <article class="timeline-item tilt">
-          <h3>Licence 3 — Économie et Management de la Santé</h3>
-          <p>Université Paris-Est Créteil • 2025-2026</p>
-          <ul>
-            <li>Analyse économique des systèmes de santé.</li>
-            <li>Évaluation des politiques publiques et indicateurs de performance.</li>
-          </ul>
-        </article>
-        <article class="timeline-item tilt">
-          <h3>Licence 2 — Économie et Management de la Santé</h3>
-          <p>Université Paris-Est Créteil • 2024-2025</p>
-          <ul>
-            <li>Statistiques appliquées à l’économie et à la santé.</li>
-            <li>Approche quantitative des enjeux médico-économiques.</li>
-          </ul>
-        </article>
-        <article class="timeline-item tilt">
-          <h3>Licence 1 & 2 — Géographie et Aménagement</h3>
-          <p>Université Sorbonne Paris Nord • 2022-2024</p>
-          <ul>
-            <li>Socle méthodologique en traitement de données territoriales.</li>
-            <li>Compétence complémentaire utile pour les inégalités de santé.</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section id="master" class="section reveal">
-      <div class="section-head">
-        <p class="kicker">Objectif académique</p>
-        <h2>Pourquoi ce Master ?</h2>
-      </div>
-      <div class="master-grid">
-        <article class="master-card tilt">
-          <h3>Économie de la santé</h3>
-          <p>Étudier l'allocation des ressources, l'efficience des politiques de santé et l'évaluation médico-économique.</p>
-        </article>
-        <article class="master-card tilt">
-          <h3>Santé publique</h3>
-          <p>Contribuer à la décision publique via la donnée, la prévention et les stratégies d'amélioration des systèmes de soins.</p>
-        </article>
-        <article class="master-card tilt">
-          <h3>Économie du développement</h3>
-          <p>Analyser les inégalités et proposer des réponses économiques adaptées aux enjeux sociaux et sanitaires.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="projets" class="section reveal">
-      <div class="section-head">
-        <p class="kicker">Projets</p>
-        <h2>Projets en économie ET en géographie</h2>
-      </div>
-      <div class="projects-grid">
-        <article class="project-card tilt">
-          <img src="projet 1 geo.png" alt="Carte issue du projet de géomatique" class="project-media">
-          <div class="project-badge">Géographie</div>
-          <h3>Projet Géomatique (SIG)</h3>
-          <p>Production et analyse de cartes avec QGIS / ArcGIS, lecture spatiale des territoires et interprétation des données.</p>
-        </article>
-        <article class="project-card tilt">
-          <img src="Projet 2 Geo.jpg" alt="Illustration du projet botanique" class="project-media">
-          <div class="project-badge">Géographie / Terrain</div>
-          <h3>Initiation à la botanique</h3>
-          <p>Étude de la diversité végétale, observation terrain et restitution des résultats en rapport académique.</p>
-          <a class="project-link" href="FINAL DOC.pdf" download>Télécharger le rapport</a>
-        </article>
-        <article class="project-card tilt">
-          <div class="project-badge">Économie appliquée</div>
-          <h3>Analyse des politiques publiques de santé</h3>
-          <p>Étude comparative d'indicateurs économiques et sanitaires pour comprendre l'impact des politiques sur les populations.</p>
-        </article>
-        <article class="project-card tilt">
-          <div class="project-badge">Quantitatif</div>
-          <h3>Statistiques & visualisation</h3>
-          <p>Exploitation de données avec Excel/Python (notions) pour produire des synthèses lisibles pour la décision.</p>
-        </article>
-        <article class="project-card tilt">
-          <div class="project-badge">Numérique</div>
-          <h3>Portfolio de candidature</h3>
-          <p>Site web moderne orienté entretien Master, conçu pour présenter mon parcours, mes objectifs et mes compétences.</p>
-          <div class="project-screens">
-            <img src="iPhone-13-PRO-127.0.0.1.png" alt="Portfolio mobile">
-            <img src="Galaxy-Tab-S7-127.0.0.1.png" alt="Portfolio tablette">
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section reveal">
-      <div class="section-head">
-        <p class="kicker">Compétences</p>
-        <h2>Compétences clés pour un Master en économie & santé</h2>
-      </div>
-      <div class="chips">
-        <span>Économie de la santé</span>
-        <span>Économétrie / statistiques</span>
-        <span>Analyse de politiques publiques</span>
-        <span>Droit de la santé</span>
-        <span>Excel avancé</span>
-        <span>Python (notions)</span>
-        <span>Power BI (notions)</span>
-        <span>SQL (notions)</span>
-        <span>Communication écrite/orale</span>
-      </div>
-    </section>
-
-    <section id="contact" class="section reveal">
-      <div class="section-head">
-        <p class="kicker">Contact</p>
-        <h2>Échangeons sur ma candidature en Master</h2>
-      </div>
-      <div class="contact-grid">
-        <article class="contact-card tilt">
-          <p>
-            Je peux présenter mon parcours, mes motivations et mon projet professionnel lors d'un entretien.
-            Je suis particulièrement motivé par les formations en économie de la santé et santé publique.
-          </p>
-          <p class="small">Lien portfolio : ibrahimagass.github.io/Porfolio</p>
-        </article>
-        <form class="contact-form" action="https://formspree.io/f/xzzpzgwn" method="post">
-          <label for="name">Nom et prénom</label>
-          <input type="text" id="name" name="name" required>
-
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-
-          <label for="message">Message</label>
-          <textarea id="message" name="message" required></textarea>
-
-          <button class="btn" type="submit">Envoyer</button>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-content">
-      <p>© 2024 Ibrahima GASSAMA — Portfolio Master économie & santé.</p>
-      <div class="social-links">
-        <a target="_blank" href="https://twitter.com/"><img src="twitter.png" alt="Twitter"></a>
-        <a target="_blank" href="https://www.instagram.com/"><img src="instagram.png" alt="Instagram"></a>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    const revealElements = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) entry.target.classList.add('show');
-      });
-    }, { threshold: 0.2 });
-    revealElements.forEach((el) => observer.observe(el));
-
-    const counters = document.querySelectorAll('.stat-value');
-    const animateCounter = (el) => {
-      const target = Number(el.dataset.count);
-      let current = 0;
-      const step = Math.max(1, Math.round(target / 20));
-      const interval = setInterval(() => {
-        current += step;
-        if (current >= target) {
-          el.textContent = `${target}+`;
-          clearInterval(interval);
-        } else {
-          el.textContent = `${current}`;
-        }
-      }, 40);
-    };
-
-    const counterObserver = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting && !entry.target.dataset.done) {
-          entry.target.dataset.done = 'true';
-          animateCounter(entry.target);
-        }
-      });
-    }, { threshold: 0.6 });
-    counters.forEach((c) => counterObserver.observe(c));
-
-    const tiltCards = document.querySelectorAll('.tilt');
-    tiltCards.forEach((card) => {
-      card.addEventListener('mousemove', (e) => {
-        const rect = card.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-        const rx = ((y / rect.height) - 0.5) * -6;
-        const ry = ((x / rect.width) - 0.5) * 6;
-        card.style.transform = `perspective(800px) rotateX(${rx}deg) rotateY(${ry}deg) translateY(-2px)`;
-      });
-      card.addEventListener('mouseleave', () => {
-        card.style.transform = '';
-      });
-    });
-  </script>
+    </footer>
 </body>
 </html>
